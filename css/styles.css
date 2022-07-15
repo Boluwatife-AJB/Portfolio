@@ -319,8 +319,8 @@ img {
 }
 .home__content-button {
   display: flex;
-  max-width: 100%;
-  margin: var(--mb-4) auto;
+  width: 100%;
+  margin: var(--mb-4) 0;
   justify-content: space-between;
 }
 .home__content-button .hire {
@@ -329,6 +329,11 @@ img {
 }
 .home__content-button .download {
   width: 50%;
+}
+@media screen and (max-width: 420px) {
+  .home__content-button .download {
+    width: 55%;
+  }
 }
 .home__content-button button {
   background-color: var(--white-color);
