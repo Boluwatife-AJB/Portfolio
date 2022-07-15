@@ -16,12 +16,11 @@
   }
 
   &__title {
-    // align-self: flex-end;
     font-size: var(--big-font-size);
 
     color: var(--yellow-color);
     line-height: 1;
-    // margin: auto;
+
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -62,12 +61,12 @@
       justify-content: space-between;
 
       .hire {
-        width: 100px;
+        width: 40%;
         margin-left: 0;
       }
 
-      .downoad {
-        width: 170px;
+      .download {
+        width: 50%;
       }
 
       button {
@@ -86,19 +85,21 @@
         &:hover {
           background-color: var(--yellow-color);
           font-weight: 500;
-          color: var(--green-color);
+          a {
+            color: var(--green-color);
+          }
         }
 
         @media screen and (min-width: 768px) {
-          margin: var(--mb-3) var(--mb-4) 0 0;
-          padding: 5px;
-          // max-width: 100%;
+          margin: var(--mb-3) 0 0 0;
+          padding: 0 6px;
+          max-width: 60%;
         }
       }
 
       @media screen and (min-width: 768px) {
         margin: 0;
-        // flex-direction: column;
+        width: 30%;
       }
     }
   }
@@ -125,7 +126,6 @@
 
     @media screen and (min-width: 768px) {
       width: 460px;
-      // right: 5%;
     }
   }
 

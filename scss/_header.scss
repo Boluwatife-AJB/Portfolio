@@ -8,7 +8,6 @@
 
   overflow: hidden;
   @media screen and (min-width: 768px) {
-    // padding: 0 4.5rem;
   }
 
   .nav {
@@ -28,7 +27,6 @@
     }
 
     &__menu {
-      // background-color: red;
       @media screen and (max-width: 768px) {
         position: fixed;
         top: var(--header-height);
@@ -48,6 +46,15 @@
       @media screen and (min-width: 768px) {
         margin-left: var(--mb-4);
         margin-bottom: 0;
+        height: 100%;
+        cursor: pointer;
+        height: 37px;
+
+        &:hover {
+          a {
+            color: var(--yellow-color);
+          }
+        }
       }
     }
 
@@ -62,9 +69,9 @@
       color: #2a3b47;
       font-weight: 400;
 
-      &:hover {
-        color: var(--yellow-color);
-      }
+      // &:hover {
+      //   color: var(--yellow-color);
+      // }
 
       @media screen and (min-width: 768px) {
         color: var(--white-color);
